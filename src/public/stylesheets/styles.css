@@ -1,0 +1,512 @@
+/* --------------------------
+General Styles 
+----------------------------- */
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color: #333;
+}
+
+.content-padding {
+	padding-left: 11%;
+	padding-right: 11%;
+}
+
+
+
+/* --------------------------
+Hero Image / Title Styles 
+----------------------------- */
+#hero-image {
+	height: 550px;
+	width: 100%;
+	background-color: #444;
+	background-image: url('../images/death_star_image.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+
+#hero-image::before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.15);
+	content: "";
+}
+
+#hero-image #hero-title {
+	position: absolute;
+	background-color: #fff;
+	padding: 25px 60px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  bottom: 0;
+  margin: 0px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.20em;
+  letter-spacing: 0.4px;
+}
+
+
+
+
+
+/* ---------------------------------------
+Navbar and Navigation Styles / Overrides 
+------------------------------------------ */
+.navbar-fixed-top {
+	position: absolute;
+	padding-top: 10px;
+}
+
+.navbar-nav li a {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.3px;
+	font-size: 12px;
+}
+
+.dropdown.open .dropdown-menu li a {
+	transition: 0.5s ease-in-out;
+}
+
+.dropdown.open .dropdown-menu li a:hover {
+	color: #fde5b9;
+}
+
+.navbar-nav > li:first-child {
+	margin-right: 25px;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+	background-color: transparent;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li a:focus {
+	background-color: transparent;
+}
+
+.navbar-nav>li>.dropdown-menu {
+	background-color: rgba(0,0,0,0.5);
+}
+
+
+
+
+
+/* -----------------------------
+Home Page Posters Styles 
+-------------------------------- */
+
+#posters-wrapper {
+	padding-top: 75px;
+}
+.poster {
+	width: 30%;
+	margin-right: 4%;
+	display: inline-block;
+	position: relative;
+}
+
+
+/* Poster Overlay Styles */
+.poster-info-overlay {
+	position: absolute;
+	background: rgba(0,0,0,0.7);	
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	transition: 0.5s ease-in-out;
+	padding: 30px 15px;
+}
+.poster-info-overlay h3 {
+	text-transform: uppercase;
+	font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  color: #fff;
+  margin: 0px;
+}
+.poster-info-overlay h4 {
+	text-transform: uppercase;
+	font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 0.3px;
+  color: #fff;
+  margin: 0px;	
+  margin-top: 15px;
+}
+.poster:hover .poster-info-overlay {
+	opacity: 1;
+}
+
+
+
+
+
+/* -----------------------------
+Footer Styles 
+-------------------------------- */
+
+footer {
+	margin-top: 50px;
+}
+
+footer::before {
+	content: "";
+	display: block;
+	width: 90%;
+	margin-bottom: 20px;
+	border-top: 1px solid #dedede;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer p {
+	float: left;
+	color: #999;
+	letter-spacing: 0.3px;
+	font-size: 12px;
+	padding-bottom: 20px;
+}
+
+footer .social-media-icons {
+	float: right;
+}
+
+footer .social-media-icons i {
+	font-size: 24px;
+	color: #999;
+	transition: 0.5s ease-in-out;
+}
+
+footer .social-media-icons a:first-child {
+	margin-right: 20px;
+}
+
+footer .social-media-icons a:last-child:hover i {
+	color: #af0b0c;
+}
+
+footer .social-media-icons a:first-child:hover i {
+	color: #333;
+}
+
+
+
+
+
+
+/* -----------------------------
+
+
+Movie-Single Styles 
+
+
+-------------------------------- */
+
+
+
+
+
+
+/* ---------------------------------------
+Movie-Single Hero Image and Title Styles 
+------------------------------------------ */
+
+#hero-image-single {
+	height: 550px;
+	width: 100%;
+	background-color: #444;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+
+#hero-image-single::before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.15);
+	content: "";
+}
+
+#hero-image-single #hero-title {
+	position: absolute;
+	background-color: #fff;
+	padding: 25px 60px;
+	left: 50%;
+	width: auto;
+
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  bottom: 0;
+
+  margin: 0px;
+
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.20em;
+  letter-spacing: 0.4px;
+}
+
+
+
+
+
+/* ---------------------------------------
+Movie-Single Poster and Description Styles 
+------------------------------------------ */
+.poster-wrapper {
+	float: left;
+	width: 30%;
+	margin-top: 50px;
+}
+
+.description-wrapper {
+	float: right;
+	margin-left: 5%;
+	width: 65%;
+	margin-top: 50px;
+}
+
+.movie-header {
+	text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.95em;
+  letter-spacing: 0.4px;
+  padding: 15px 25px;
+  border: 2px solid #333;
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.description-wrapper p {
+	line-height: 1.95;
+	letter-spacing: 0.3px;
+	font-size: 13px;
+	margin-bottom: 25px;
+}
+
+.main-characters ul li {
+	display: inline-block;
+	list-style: none;
+	margin-right: 40px;
+	margin-bottom: 15px;
+	letter-spacing: 0.3px;
+	font-size: 13px;
+}
+
+.main-characters ul {
+	padding-left: 0px;
+}
+
+
+
+
+
+/* -----------------------------
+
+
+Media Queries / Responsive Styles
+
+
+-------------------------------- */
+
+/* Decrease content padding */
+@media (max-width: 1024px) {
+	.content-padding {
+		padding-left: 8%;
+		padding-right: 8%;
+	}
+}
+@media (max-width: 767px) {
+	.content-padding {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+
+/* Apply margins to the correct posters on large devices */
+@media (min-width: 992px) {
+	.poster:nth-child(3), .poster:last-child {
+		margin-right: 0px;
+	}
+
+	.poster:nth-child(-n + 3) {
+		margin-bottom: 30px;
+	}
+}
+
+
+/* Two posters per row on smaller devices */
+@media (max-width: 991px) {
+	.poster-wrapper {
+		width: 100%;
+	}
+	.poster-wrapper img {
+		width: 350px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.description-wrapper {
+		margin-top: 30px;
+		width: 100%;
+	}
+
+	.poster {
+		width: 47%;
+		margin-bottom: 50px;
+	}
+
+	.poster:nth-child(2n) {
+		margin-right: 0px;
+	}
+
+}
+
+/* Increase width of the hero-title element on Movie-single pages to prevent text from stacking */
+@media (max-width: 1099px) {
+	#hero-image-single #hero-title {
+		font-size: 1.05em;
+		text-align: center;
+		width: 60%;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+@media (max-width: 767px) {
+	#hero-image-single #hero-title, #hero-image-notFound #hero-title {
+		width: 75%;
+	}	
+}
+
+
+/* Increase width of the hero-title element on home page to prevent text from stacking */
+@media (max-width: 767px) {
+	#hero-image #hero-title {
+		font-size: 1.05em;
+		text-align: center;
+		width: 50%;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+@media (max-width: 500px) {
+	#hero-image #hero-title  {
+		width: 65%;
+	}	
+}
+
+/* Move navigation to the left and prevent default styles on mobile devices */
+@media (max-width: 767px) {
+	.navbar-right {
+		float: left;
+	}
+	.navbar-right li {
+		display: inline-block;
+	}
+	.navbar-nav .open .dropdown-menu {
+		position: absolute;
+		margin-left: -100px;
+		background-color: rgba(0,0,0,0.5);
+	}
+	
+}
+
+/* Decrease font size and padding of poster overlay on mobile devices */
+@media (max-width: 767px) {
+	.poster-info-overlay h3 {
+		font-size: 12px;
+	}
+	.poster-info-overlay {
+		padding: 20px 8px;
+	}
+}
+
+/* Decrease the height of the hero images on mobile devices */
+@media (max-width: 767px) {
+	#hero-image, #hero-image-single, #hero-image-notFound {
+		height: 400px;
+	}
+}
+
+/* Increase the width of the hero title on very small devices */
+@media(max-width: 400px) {
+	#hero-image-single #hero-title, #hero-image-notFound #hero-title,
+	#hero-image #hero-title {
+		width: 90%;
+		font-size: 0.95em;
+	}
+}
+
+
+
+
+
+/* -----------------------------
+
+
+Page Not Found Template Styles
+
+
+-------------------------------- */
+
+#hero-image-notFound {
+	height: 550px;
+	width: 100%;
+	background-color: #444;
+	background-image: url('../images/404.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+
+#hero-image-notFound::before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.15);
+	content: "";
+}
+
+#hero-image-notFound #hero-title {
+	position: absolute;
+	background-color: #fff;
+	padding: 25px 60px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  bottom: 0;
+  margin: 0px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.20em;
+  letter-spacing: 0.4px;
+}
